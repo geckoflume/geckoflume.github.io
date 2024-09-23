@@ -225,7 +225,6 @@ article.active {
 .h4,
 .h5 {
   color: var(--white-2);
-  text-transform: capitalize;
 }
 
 .h2 { font-size: var(--fs-1); }
@@ -316,7 +315,7 @@ main {
 
 .sidebar {
   margin-bottom: 15px;
-  max-height: 112px;
+  max-height: 132px;
   overflow: hidden;
   transition: var(--transition-2);
 }
@@ -836,7 +835,10 @@ main {
 
 .skills-title { margin-bottom: 20px; }
 
-.skills-list { padding: 20px; }
+.skills-list {
+  padding: 20px;
+  cursor: auto;
+}
 
 
 .skills-item:not(:last-child) { margin-bottom: 15px; }
