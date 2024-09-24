@@ -96,7 +96,7 @@
             </div>
 
             <div class="contact-info">
-              <p class="contact-title">Date de naissance</p>
+              <p class="contact-title">Anniversaire</p>
               <time datetime="1982-06-23">15 mars 1999</time>
             </div>
 
@@ -188,7 +188,7 @@
 
         <section class="about-text">
           <p>
-            Je suis un ingénieur spécialisé dans le développement de logiciels embarqués. J 'ai acquis une solide expertise dans la résolution de problèmes complexes.
+            Je suis un ingénieur spécialisé dans le développement de logiciels embarqués ayant acquis une solide expertise dans la résolution de problèmes complexes.
           </p>
           <p>
             Ma capacité à collaborer de manière efficace au sein d'équipes multidisciplinaires, combinée à mon adaptabilité rapide face aux environnements en évolution, m'a permis de contribuer au succès de projets variés.
@@ -506,19 +506,22 @@
 
           <ul class="filter-list">
             <li class="filter-item">
-              <button class="active" data-filter-btn>Tout</button>
+              <button class="active" data-filter-btn data-category="all">Tout</button>
             </li>
             <li class="filter-item">
-              <button data-filter-btn>Applications mobiles</button>
+              <button data-filter-btn data-category="applications">Applications mobiles</button>
             </li>
             <li class="filter-item">
-              <button data-filter-btn>Développement web</button>
+              <button data-filter-btn data-category="web development">Développement web</button>
+            </li>
+            <li class="filter-item">
+              <button data-filter-btn data-category="iot">IoT / Domotique</button>
             </li>
           </ul>
 
           <div class="filter-select-box">
             <button class="filter-select" data-select>
-              <div class="select-value" data-selecct-value>Selectionnez une catégorie</div>
+              <div class="select-value" data-select-value>Selectionnez une catégorie</div>
               <div class="select-icon">
                 <ion-icon name="chevron-down"></ion-icon>
               </div>
@@ -526,20 +529,23 @@
 
             <ul class="select-list">
               <li class="select-item">
-                <button data-select-item>Tout</button>
+                <button data-select-item data-category="all">Tout</button>
               </li>
               <li class="select-item">
-                <button data-select-item>Applications mobiles</button>
+                <button data-select-item data-category="applications">Applications mobiles</button>
               </li>
               <li class="select-item">
-                <button data-select-item>Développement web</button>
+                <button data-select-item data-category="web development">Développement web</button>
+              </li>
+              <li class="select-item">
+                <button data-select-item data-category="iot">IoT / Domotique</button>
               </li>
             </ul>
 
           </div>
 
           <ul class="project-list">
-            <li class="project-item  active" data-filter-item data-category="développement web">
+            <li class="project-item  active" data-filter-item data-categories='["web development", "iot"]'>
               <a href="https://github.com/geckoflume/mixologist">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -548,11 +554,11 @@
                   <img src="./assets/images/project-mixologist.png" alt="mixologist" loading="lazy">
                 </figure>
                 <h3 class="project-title">Mixologist</h3>
-                <p class="project-category">Développement web</p>
+                <p class="project-category">Développement web, IoT / Domotique</p>
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="développement web">
+            <li class="project-item  active" data-filter-item data-categories='["web development"]'>
               <a href="https://talumieredivine.fr">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
